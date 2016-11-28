@@ -9,10 +9,12 @@ jar {
                    'Implementation-Version': version
     }
 }
+
 buildscript {
     repositories {
         mavenCentral()
         maven{
+        
         	url("https://maven.oracle.com")
         }
     }
@@ -25,15 +27,15 @@ apply plugin: 'java'
 apply plugin: 'spring-boot'
 apply plugin: 'eclipse'
 apply plugin: 'net.saliman.cobertura'
-apply plugin: 'pmd'
-pmd {
-    ruleSets = [
-           "java-basic",
-            "java-braces"
-            ]
-}
+//apply plugin: 'pmd'
+//pmd {
+  //  ruleSets = [
+    //       "java-basic",
+      //      "java-braces"
+        //    ]
+//}
 jar {
-    baseName = 'Ejemplo'
+    baseName = 'SistemadeVuelos'
     version  = '0.1.0'
 }
 repositories {
@@ -44,7 +46,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
-    compile("org.springframework.boot:spring-boot-starter-security")
+   // compile("org.springframework.boot:spring-boot-starter-security")
     
     compile("org.thymeleaf:thymeleaf-spring4")
     //compile ("org.springFramework.data:spring-data-oracle:$sdJdbcVersion")
@@ -58,7 +60,7 @@ dependencies {
    
     testCompile("junit:junit")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
-    compile("org.springframework.boot:spring-boot-starter-security")
+   // compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.thymeleaf:thymeleaf-spring4")
    	//compile("com.oracle:ojdbc14:10.2.0.2.0")// este descarga pero es muy viejo
    //  compile("C:/Users/Gera/Desktop/ojdbc6-11.2.0.2.0.jar")

@@ -13,19 +13,13 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import edu.uacm.Application;
 import edu.uacm.domain.Aeropuerto;
 import edu.uacm.domain.AeropuertoRepository;
-import edu.uacm.domain.Avion;
-import edu.uacm.domain.AvionRepository;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes=Application.class)
 @WebAppConfiguration
 public class AeropuertoTest {
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
-
-	@Autowired
-	AvionRepository ar;
-	
-
 	@Autowired
 	DataSource ds;
 	@Autowired
@@ -47,7 +41,7 @@ public class AeropuertoTest {
 		ae.setIdaeropuerto(4);
 		ae.setNombreaeropuerto("AeroMadrid");
 		ae.setCiudad("Real Madrid");
-		ae.setPais("España");
+		ae.setPais("Espania");
 		aer.save(ae);
 		Assert.assertNotNull(ae);
 	}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+     xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+   <head>
+       <title>Alta paciente</title>
+   </head>
+   <body>
+   	
+   		<form th:action="@{/daralta/dandoAlta}" method="post" >
+   			<br/>
+   			<font size="3"><b>IdAeropuerto:</b></font>
+   			<br/>
+        	<font size="2">x86,x67</font>
+        	<br/>
+        	<input type="text" name="idaeropuerto" id="idaeropuerto" size="35"/>
+        	<br/>
+        	<br/>
+        	<font size="3"><b>Nombre Del Aeropuerto:</b></font>
+        	<br/>
+        	<input type="text" name="nombreaeropuerto" id="nombreaeropuerto" size="35"  th:required="required" />
+        	<br/>
+        	<br/>
+        	<font size="3"><b>Ciudad:</b></font>
+        	<br/>
+        	<input type="text" name="ciudad" id="ciudad" size="35" th:required="required"/>
+        	<br/>
+        	<br/>
+        	<font size="3"><b>Pais:</b></font>
+        	<br/>
+        	<br/>
+        	<input type="text" name="pais" id="pais" size="35" th:required="required"/>
+        	<br/>
+        	
+        	<!--  
+        	
+        	<br/>
+        	<font size="3"><b>Direccion:</b></font>
+        	<br/>
+        	<input type="text" name="direccion" id="direccion" size="35" th:required="required"/>
+        	<br/>
+        	<br/>
+        	<font size="3"><b>Telefono:</b></font>
+        	<br/>
+        	<font size="2">Numero de 10 digitos</font>
+        	<br/>
+        	<input type="text" name="telefono" id="telefono" size="35" th:required="required"/>
+        	<br/>
+        	<br/>
+        	-->
+        	<input type="submit" value="Dar de alta"/>
+        </form>
+    
+   		<br/>
+   		<!--  <a th:href="@{/consulta.html}" ><img th:src="@{/img/cancelar.png}" align="right" width="8%"></img></a> -->
+   </body>
+</html>
