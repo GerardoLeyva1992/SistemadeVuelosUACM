@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import edu.uacm.domain.Aeropuerto;
 import edu.uacm.domain.AeropuertoRepository;
-@ResponseBody
+
 @Controller
 @RequestMapping("/daralta")
 public class AltaController {
@@ -23,7 +23,6 @@ public class AltaController {
 	
 	
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
-	@ResponseBody
 	@RequestMapping(value="/redir", method=RequestMethod.GET)
 	public String redireccionar() {
 		log.debug("--------Estoy entrando a alta()------");
