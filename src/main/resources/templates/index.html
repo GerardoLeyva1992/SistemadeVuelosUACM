@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" 
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head >
+	<title>Spring Security</title>
+</head>
+<body>
+    <h1 th:text="${titulo}">Titulo principal de la pagina</h1>
+	<a th:href="@{/mensaje}">
+	<button>Acceder</button></a>
+</body>
+
+</html>
