@@ -25,6 +25,7 @@ public class Empleado {
 	private String nacionalidad;
 	@NotNull
 	private String fechanacimiento;
+	
 	public int getCodigo() {
 		return codigo;
 	}

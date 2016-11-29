@@ -1,10 +1,34 @@
-<!DOCTYPE HTML>
-<html>
-<head> 
-    <title>Getting Started: Serving Web Content</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-    <p>Get your greeting <a href="/greeting">here</a></p>
-</body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+       <title>Alta paciente</title>
+   </head>
+   <body>
+   	
+   		<form th:action="@{/daralta/dandoAlta}" method="post" >
+   			
+   			<font size="3"><b>IdAeropuerto:</b></font>
+   			
+        	<font size="2">x86,x67</font>
+        	<input type="text" name="idaeropuerto" id="idaeropuerto" size="35"/>
+        	
+        	<font size="3"><b>Nombre Del Aeropuerto:</b></font>
+        	
+        	<input type="text" name="nombreaeropuerto" id="nombreaeropuerto" size="35"  th:required="required" />
+        	
+        	<font size="3"><b>Ciudad:</b></font>
+        	
+        	<input type="text" name="ciudad" id="ciudad" size="35" th:required="required"/>
+        	
+        	<font size="3"><b>Pais:</b></font>
+        	
+        	<input type="text" name="pais" id="pais" size="35" th:required="required"/>
+        	
+      
+        	<input type="submit" value="Dar de alta"/>
+        </form>
+    
+   		
+   		<!--  <a th:href="@{/consulta.html}" ><img th:src="@{/img/cancelar.png}" align="right" width="8%"></img></a> -->
+   </body>
 </html>

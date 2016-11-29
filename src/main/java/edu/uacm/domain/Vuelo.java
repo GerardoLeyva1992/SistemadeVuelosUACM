@@ -1,15 +1,9 @@
 package edu.uacm.domain;
-
-
 import java.sql.Timestamp;
-import java.util.Collection;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-
 @Table(name="vuelo")
 @Entity
 public class Vuelo {
@@ -61,9 +55,4 @@ public class Vuelo {
 	public void setAvion_idavion(int avion_idavion) {
 		this.avion_idavion = avion_idavion;
 	}
-	
-	
-	
-	
-
 }
