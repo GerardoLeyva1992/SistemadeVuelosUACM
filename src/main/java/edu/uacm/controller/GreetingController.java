@@ -1,4 +1,4 @@
-package edu.uacm;
+package edu.uacm.controller;
 
 import java.io.IOException;
 
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.uacm.domain.Aeropuerto;
 import edu.uacm.domain.AeropuertoRepository;
-
 @Controller
 @RequestMapping("/static")
 public class GreetingController {
@@ -25,19 +24,14 @@ public class GreetingController {
 	@RequestMapping(value="",method=RequestMethod.GET)
 	public String ListPosts(Model model){
 		model.addAttribute("static",rp.findAll());
-		return "static/index";
+		return "static/alta";
 		
 	}
-	@RequestMapping(value="/dandoAlta", method=RequestMethod.POST)
+	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String darAlta(@ModelAttribute  Aeropuerto ae) throws IOException{
 		log.debug("-----Dando de alta: -------");
-		
 		rp.save(ae);
-	    return "redirect:/exitoAlta.html";
+	    return "static/alta";
 	}
-	
-	
-	
- 
     
 }
