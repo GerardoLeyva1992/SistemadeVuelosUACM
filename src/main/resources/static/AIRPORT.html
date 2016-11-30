@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=WINDOWS-1252">
+<meta name="generator" content="SQL*Plus 11.2.0">
+<TITLE>Aeropuetos Reporte</TITLE>  <STYLE type='text/css'>  <!-- BODY {background: #FFFFC6} -->  </STYLE>
+</head>
+<body TEXT='#FF00Ff'>
+SQL&gt; SELECT '&lt;A HREF=&quot;http://oracle.com/'||IDAEROPUERTO||'.html&quot;&gt;'||IDAEROPUERTO||'&lt;/A&gt;' IDAEROPUERTO, NOMBREAEROPUERTO,CIUDAD,PAIS
+<br>
+  2  FROM AEROPUERTO;
+<br>
+<p>
+<table WIDTH='90%' BORDER='5'>
+<tr>
+<th scope="col">
+IDENTIFICADOR
+</th>
+<th scope="col">
+NOMBREAEROPUERTO
+</th>
+<th scope="col">
+CIUDAD
+</th>
+<th scope="col">
+PAIS
+</th>
+</tr>
+<tr>
+<td>
+<A HREF="http://oracle.com/1.html">1</A>
+</td>
+<td>
+AeroMexico
+</td>
+<td>
+Ciudad de Mexico
+</td>
+<td>
+Mexico
+</td>
+</tr>
+<tr>
+<td>
+<A HREF="http://oracle.com/2.html">2</A>
+</td>
+<td>
+AeroUsa
+</td>
+<td>
+Texas
+</td>
+<td>
+Usa
+</td>
+</tr>
+<tr>
+<td>
+<A HREF="http://oracle.com/3.html">3</A>
+</td>
+<td>
+AeroAla
+</td>
+<td>
+Peru
+</td>
+<td>
+Prusito
+</td>
+</tr>
+<tr>
+<td>
+<A HREF="http://oracle.com/4.html">4</A>
+</td>
+<td>
+AeroMadrid
+</td>
+<td>
+Real Madrid
+</td>
+<td>
+Espania
+</td>
+</tr>
+</table>
+<p>
+
+SQL&gt; spool off
+<br>
+</body>
+</html>
